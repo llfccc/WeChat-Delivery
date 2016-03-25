@@ -158,7 +158,7 @@ def checkID(digitID): #检查是否已经申请过编号
 @app.route('/', methods = ['GET', 'POST'] )
 def wechat_auth():
     if request.method == 'GET':
-        token = 'nibuzhidaowoshilelinfengba'# your token
+        token = ''     # write your wechat token here
         query = request.args  # GET 方法附上的参数
         signature = query.get('signature', '')
         timestamp = query.get('timestamp', '')
